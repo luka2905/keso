@@ -7,31 +7,52 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: black;
-      color: pink;
-      font-family: Arial, sans-serif;
       height: 100vh;
+      font-family: 'Arial', sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      background: linear-gradient(135deg, #ff00cc, #ff66ff, #ffccff);
+      background-size: 400% 400%;
+      animation: gradientFlow 10s ease infinite;
+      color: pink;
+      text-align: center;
+    }
+
+    @keyframes gradientFlow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 20px;
+      color: white;
+      text-shadow: 0 0 10px pink, 0 0 20px hotpink;
+      margin-bottom: 30px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
     }
 
     img {
       max-width: 300px;
-      border: 4px solid pink;
+      border: 4px solid white;
       border-radius: 20px;
-      box-shadow: 0 0 20px pink;
+      box-shadow: 0 0 30px white;
     }
   </style>
 </head>
 <body>
   <h1>გაცელდი კესი</h1>
-  <img src="kesi.jpg" alt="კესი">
+  <img src="34cc08e6-6388-43e6-83c2-292e322dfd9a.jpg" alt="კესი">
 </body>
 </html>
